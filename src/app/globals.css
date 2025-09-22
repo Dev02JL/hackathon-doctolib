@@ -65,3 +65,12 @@ body {
   color: var(--foreground);
   font-family: 'Roboto', 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.01); }
+}
+
+.animate-logo-float {
+  animation: logo-float 3s ease-in-out infinite;
+}
