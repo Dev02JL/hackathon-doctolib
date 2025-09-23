@@ -17,7 +17,7 @@ export default function LottieLogo({ className }: { className?: string }) {
         renderer: "svg",
         loop: true,
         autoplay: true,
-        path: "/animation/animationlogo.json",
+        path: "/animation/animation.json",
         rendererSettings: {
           preserveAspectRatio: "xMidYMid meet",
           progressiveLoad: true,

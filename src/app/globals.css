@@ -55,8 +55,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Conserver le bleu de marque en mode sombre */
+    --background: #257CCB;
+    --foreground: #171717;
   }
 }
 
