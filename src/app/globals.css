@@ -27,7 +27,7 @@
 :root {
   /* Base */
   --foreground: #171717;
-  --background: #0E7ACA;
+  --background: #257CCB;
   /* Brand palette */
   --nightshift: #102A44;
   --oxylove: #2478BE;
@@ -56,7 +56,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Conserver le bleu de marque en mode sombre */
-    --background: #257CCB;
+    --background: #107ACA;
     --foreground: #171717;
   }
 }
