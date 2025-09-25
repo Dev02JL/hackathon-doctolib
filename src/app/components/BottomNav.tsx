@@ -19,7 +19,7 @@ const items: NavItem[] = [
   { href: "/rdv", label: "Rendez-vous", icon: "custom:calendar" },
   { href: "/health", label: "Santé", icon: "custom:health" },
   { href: "/messages", label: "Messages", icon: "custom:message" },
-  { href: "#", label: "Nouveautés", icon: "custom:news" },
+  { href: "/news", label: "Nouveautés", icon: "custom:news" },
 ];
 
 export default function BottomNav() {
