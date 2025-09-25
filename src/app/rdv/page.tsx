@@ -1,10 +1,17 @@
 import RdvTabs from "../components/RdvTabs";
-import RdvHeader from "../components/RdvHeader";
+import ProfileIcon from "../components/icons/ProfileIcon";
 
 export default function RdvPage() {
   return (
     <div className="min-h-screen bg-[#e6f5ff]">
-      <RdvHeader />
+      <div className="w-full bg-oxylove text-white py-3 pt-10">
+        <div className="mx-auto max-w-screen-sm px-4 flex items-center justify-between">
+          <span style={{ fontFamily: 'Pacifico, cursive' }} className="text-xl">Mes Rendez-vous</span>
+          <span aria-hidden>
+            <ProfileIcon size={24} />
+          </span>
+        </div>
+      </div>
       <main className="mx-auto max-w-screen-lg px-4 pt-0 pb-28">
         <RdvTabs />
 

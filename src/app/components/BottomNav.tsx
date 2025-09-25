@@ -17,7 +17,7 @@ type NavItem = {
 const items: NavItem[] = [
   { href: "/", label: "Accueil", icon: "custom:home" },
   { href: "/rdv", label: "Rendez-vous", icon: "custom:calendar" },
-  { href: "#", label: "Santé", icon: "custom:health" },
+  { href: "/health", label: "Santé", icon: "custom:health" },
   { href: "#", label: "Messages", icon: "custom:message" },
   { href: "#", label: "Nouveautés", icon: "custom:news" },
 ];
