@@ -24,9 +24,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Base */
-  --foreground: #171717;
+  --foreground: #F4FCFF;
   --background: #257CCB;
   /* Brand palette */
   --nightshift: #102A44;
@@ -44,6 +52,7 @@
   --font-mono: var(--font-geist-mono);
   --font-roboto: 'Roboto', Arial, Helvetica, sans-serif;
   --font-montserrat: 'Montserrat', Arial, Helvetica, sans-serif;
+  --font-pacifico: 'Pacifico', cursive;
   /* Exposition Tailwind des couleurs (noms demandés) */
   --color-nightshift: var(--nightshift);
   --color-oxylove: var(--oxylove);
@@ -57,7 +66,7 @@
   :root {
     /* Conserver le bleu de marque en mode sombre */
     --background: #107ACA;
-    --foreground: #171717;
+    --foreground: #F4FCFF;
   }
 }
 

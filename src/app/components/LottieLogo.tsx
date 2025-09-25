@@ -28,10 +28,13 @@ export default function LottieLogo({ className }: { className?: string }) {
     });
 
     return () => {
-      try {
-        anim?.destroy();
-      } catch (_) {
-        // no-op
+      // Best-effort cleanup
+      if (anim) {
+        try {
+          anim.destroy();
+        } catch {
+          /* ignore */
+        }
       }
     };
   }, []);
