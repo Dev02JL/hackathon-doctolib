@@ -36,7 +36,7 @@ export default function HealthPage() {
         <h2 className="text-nightshift font-semibold mb-3">Profils santé de mes proches</h2>
         <div className="grid grid-cols-2 gap-4">
           <HealthCard name="Laura" note="Laura est à jour" />
-          <HealthCard name="Françoise" note="Françoise doit mettre à jour ses vaccins" ok={false} />
+          <HealthCard name="Françoise" note="Françoise doit mettre à jour ses vaccins" ok={false} href="/health/Fran%C3%A7oise" />
           <HealthCard name="Lucas" note="Lucas est à jour" />
           <HealthCard name="Marie" note="Marie est à jour" />
         </div>

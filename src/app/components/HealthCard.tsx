@@ -1,11 +1,14 @@
+import Link from "next/link";
+
 type Props = {
   name: string;
   note: string;
   ok?: boolean;
+  href?: string;
 };
 
-export default function HealthCard({ name, note, ok = true }: Props) {
-  return (
+export default function HealthCard({ name, note, ok = true, href }: Props) {
+  const content = (
     <div className="rounded-2xl bg-white shadow-md border border-nightshift/10 p-4 h-40 flex flex-col justify-between">
       <div className="flex items-center justify-between text-nightshift font-semibold">
         <span>{name}</span>
@@ -23,6 +26,15 @@ export default function HealthCard({ name, note, ok = true }: Props) {
       </div>
     </div>
   );
+
+  if (href) {
+    return (
+      <Link href={href} className="block">
+        {content}
+      </Link>
+    );
+  }
+  return content;
 }
 
 
